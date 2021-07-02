@@ -2,12 +2,6 @@
   "bracketSpacing": true,
   "endOfLine": "lf",
   "printWidth": 80,
-  "react/jsx-max-props-per-line": [
-    1,
-    {
-      "when": "always"
-    }
-  ],
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
