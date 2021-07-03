@@ -3,6 +3,7 @@
     "browser": true,
     "es2021": true
   },
+
   "ignorePatterns": [
     "node_modules/*",
     ".next/*",
@@ -30,6 +31,7 @@
     "no-console": 1,
     "require-jsdoc": "off",
     "import/newline-after-import": ["error", { "count": 1 }],
+    "react/no-array-index-key": "warn",
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",

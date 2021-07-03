@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -9,18 +10,15 @@
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "~/*": ["*"]
+    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es5"
   },
-  "exclude": [
-    "node_modules/*",
-    ".next/*",
-    ".out/*",
-    ".vscode/*",
-    "next.config.js",
-    "next-env.d.ts"
-  ],
-  "include": ["src", "**/*.ts", "**/*.tsx", "**/*.js", ".*.js", "tests"]
+  "exclude": ["node_modules/*", ".next/*", ".out/*"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".*.js"]
 }
