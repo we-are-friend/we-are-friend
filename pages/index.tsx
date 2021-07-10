@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import MyFirstComponent from '@/components/MyFirstComponent';
+import TestToggleThemeButton from '@/components/TestToggleThemeButton';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <MyFirstComponent />
+      <TestToggleThemeButton />
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app';
-import React, { useEffect } from 'react';
+import React from 'react';
+import { SettingsProvider } from 'src/contexts/SettingsContext';
+import MuiThemeWrapper from '@/theme/MuiThemeWrapper';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles && jssStyles.parentNode) {
-      jssStyles.parentNode.removeChild(jssStyles);
-    }
-  }, []);
-
-  return <Component {...pageProps} />;
+  return (
+    <SettingsProvider>
+      <MuiThemeWrapper>
+        <Component {...pageProps} />
+      </MuiThemeWrapper>
+    </SettingsProvider>
+  );
 }
 export default MyApp;
