@@ -20,5 +20,11 @@
     "target": "es5"
   },
   "exclude": ["node_modules/*", ".next/*", ".out/*"],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".*.js"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    ".*.js",
+    "src/views/ExampleView/TodoForm"
+  ]
 }
