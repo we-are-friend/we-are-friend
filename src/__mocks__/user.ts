@@ -1,4 +1,4 @@
-import mock from 'src/utils/axiosMock';
+import mock from '@/utils/axiosMock';
 
 type User = {
   name: string;
