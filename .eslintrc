@@ -31,6 +31,8 @@
     "no-console": 1,
     "require-jsdoc": "off",
     "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-anonymous-default-export": 0,
+    "new-cap": 0,
     "react/no-array-index-key": "warn",
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-filename-extension": "off",
