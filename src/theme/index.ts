@@ -140,12 +140,6 @@ const themesOptions: ThemeOptions[] = [
     },
     shadows: softShadows,
   },
-  {
-    name: THEMES.UNICORN,
-    palette: {
-      type: 'dark',
-    },
-  },
 ];
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {

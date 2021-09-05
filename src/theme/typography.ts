@@ -1,77 +1,41 @@
 const typography = {
-  fontFamily: ['Prompt', 'sans-serif'].join(','),
+  fontFamily: ['Bai Jamjuree', 'Roboto'].join(','),
+  fontSize: 14,
   h1: {
-    fontFamily: 'Prompt',
-    fontWeight: 600,
-    fontSize: 30,
-    '@media (min-width:960px)': {
-      fontSize: 36,
-    },
-    '@media (min-width:1280px)': {
-      fontSize: 40,
-    },
+    fontFamily: 'Bai Jamjuree',
   },
   h2: {
-    fontFamily: 'Prompt',
-    fontWeight: 600,
-    fontSize: 24,
-    '@media (min-width:960px)': {
-      fontSize: 28,
-    },
-    '@media (min-width:1280px)': {
-      fontSize: 32,
-    },
+    fontFamily: 'Bai Jamjuree',
   },
   h3: {
-    fontFamily: 'Prompt',
-    fontWeight: 600,
-    fontSize: 20,
-
-    '@media (min-width:960px)': {
-      fontSize: 22,
-    },
-    '@media (min-width:1280px)': {
-      fontSize: 24,
-    },
+    fontFamily: 'Bai Jamjuree',
   },
   h4: {
-    fontFamily: 'Prompt',
-    fontWeight: 500,
-    fontSize: 18,
-    '@media (min-width:960px)': {
-      fontSize: 18,
-    },
-    '@media (min-width:1280px)': {
-      fontSize: 20,
-    },
+    fontFamily: 'Bai Jamjuree',
   },
   h5: {
-    fontFamily: 'Prompt',
-    fontWeight: 600,
-    fontSize: 16,
+    fontFamily: 'Bai Jamjuree',
   },
   h6: {
-    fontFamily: 'Prompt',
-    fontWeight: 600,
-    fontSize: 14,
+    fontFamily: 'Bai Jamjuree',
+  },
+  subtitle1: {
+    fontFamily: 'Roboto',
+  },
+  subtitle2: {
+    fontFamily: 'Roboto',
   },
   body1: {
-    fontSize: 16,
-    fontFamily: 'Prompt',
-    lineHeight: '24px',
+    fontFamily: 'Roboto',
   },
   body2: {
-    fontSize: 16,
-    fontFamily: 'Prompt',
-    lineHeight: '24px',
+    fontFamily: 'Roboto',
   },
   caption: {
-    fontSize: 14,
-    fontFamily: 'Prompt',
-    lineHeight: '24px',
+    fontFamily: 'Roboto',
   },
   overline: {
-    fontWeight: 600,
+    fontFamily: 'Roboto',
   },
 };
 
