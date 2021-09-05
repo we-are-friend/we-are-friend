@@ -26,6 +26,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Tech
 - [x] Design 
   * Figma
+- [x] [Animation](https://react-spring.io/)
+  * React spring
 - [x] [MaterialUI](https://material-ui.com/)
 - [ ] [Form](https://material-ui.com/)
   * React Hook Form
@@ -34,7 +36,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
   * NextAuth
 - [x] Fetching
   * Axios
-- [ ] Quality Control
+- [x] Quality Control
   * Eslint
   * Prettier
   * Husky
