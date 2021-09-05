@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Roboto&display=optional"
             rel="stylesheet"
           />
         </Head>
