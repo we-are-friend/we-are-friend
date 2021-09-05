@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import type { FC } from 'react';
 import useSettings from '@/hooks/useSettings';
-import Button from '@material-ui/core/Button';
 import { THEMES } from '@/constants';
+import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
+import type { FC } from 'react';
 
 interface TestToggleThemeButtonProps {
   className?: string;

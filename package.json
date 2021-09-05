@@ -10,6 +10,7 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "fix-lint": "yarn lint --fix",
     "format": "prettier --write .",
     "test-all": "yarn check-lint && yarn check-types && yarn build",
     "prepare": "husky install"

@@ -1,9 +1,9 @@
-import React, { ReactNode, useEffect } from 'react';
-import type { FC } from 'react';
 import { createTheme } from 'src/theme';
+import useSettings from '@/hooks/useSettings';
+import React, { ReactNode, useEffect } from 'react';
 import { StylesProvider, ThemeProvider, CssBaseline } from '@material-ui/core';
 import { NextComponentType, NextPageContext } from 'next';
-import useSettings from '@/hooks/useSettings';
+import type { FC } from 'react';
 
 interface MuiThemeWrapperProps {
   className?: string;

@@ -1,6 +1,6 @@
+import TestToggleThemeButton from '@/components/TestToggleThemeButton';
 import Head from 'next/head';
 import React from 'react';
-import TestToggleThemeButton from '@/components/TestToggleThemeButton';
 
 export default function Home() {
   return (

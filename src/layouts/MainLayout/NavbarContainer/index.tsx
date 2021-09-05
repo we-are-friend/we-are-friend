@@ -1,14 +1,14 @@
+import HideOnScroll from './HideOnScroll';
 import React, { ReactNode } from 'react';
-import type { FC } from 'react';
 import clsx from 'clsx';
 import { createStyles, makeStyles } from '@material-ui/core';
-import type { Theme } from 'src/theme';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { useSpring, animated } from 'react-spring';
 import Container from '@material-ui/core/Container';
-import HideOnScroll from './HideOnScroll';
+import type { Theme } from 'src/theme';
+import type { FC } from 'react';
 
 interface NavbarContainerProps {
   children?: ReactNode;

@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
-import type { FC } from 'react';
-import clsx from 'clsx';
 import NavContent from './NavContent';
-import { createStyles, makeStyles } from '@material-ui/core';
-import type { Theme } from 'src/theme';
 import NavbarContainer from '@/layouts/MainLayout/NavbarContainer';
+import React, { ReactNode } from 'react';
+import clsx from 'clsx';
+import { createStyles, makeStyles } from '@material-ui/core';
+import type { FC } from 'react';
+import type { Theme } from 'src/theme';
 
 interface MainLayoutProps {
   className?: string;

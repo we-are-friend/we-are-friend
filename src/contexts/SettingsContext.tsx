@@ -1,7 +1,7 @@
-import React, { createContext, useEffect, useState } from 'react';
-import type { FC, ReactNode } from 'react';
-import _ from 'lodash';
 import { THEMES } from 'src/constants';
+import React, { createContext, useEffect, useState } from 'react';
+import _ from 'lodash';
+import type { FC, ReactNode } from 'react';
 
 interface Settings {
   direction?: 'ltr' | 'rtl';

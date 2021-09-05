@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import type { FC } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import React, { ReactNode } from 'react';
+import type { FC } from 'react';
 
 interface ExampleLayoutProps {
   children?: ReactNode;

@@ -1,3 +1,6 @@
+import { softShadows } from './shadows';
+import typography from './typography';
+import { THEMES } from 'src/constants';
 import _ from 'lodash';
 import {
   colors,
@@ -10,9 +13,6 @@ import type {
   Palette as MuiPalette,
   TypeBackground as MuiTypeBackground,
 } from '@material-ui/core/styles/createPalette';
-import { THEMES } from 'src/constants';
-import { softShadows } from './shadows';
-import typography from './typography';
 
 interface TypeBackground extends MuiTypeBackground {
   dark: string;

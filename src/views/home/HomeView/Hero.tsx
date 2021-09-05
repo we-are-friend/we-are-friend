@@ -1,5 +1,4 @@
 import React from 'react';
-import type { FC } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import {
@@ -9,6 +8,7 @@ import {
   Typography,
   makeStyles,
 } from '@material-ui/core';
+import type { FC } from 'react';
 import type { Theme } from 'src/theme';
 
 interface HeroProps {

@@ -1,7 +1,7 @@
-import React from 'react';
-import type { FC } from 'react';
-import { makeStyles } from '@material-ui/core';
 import Hero from './Hero';
+import React from 'react';
+import { makeStyles } from '@material-ui/core';
+import type { FC } from 'react';
 
 const useStyles = makeStyles(() => ({
   root: {},

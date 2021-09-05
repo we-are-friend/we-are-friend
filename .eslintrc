@@ -28,21 +28,21 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    // "import/order": [
-    //   "error",
-    //   {
-    //     "groups": [
-    //       "index",
-    //       "sibling",
-    //       "parent",
-    //       "internal",
-    //       "external",
-    //       "builtin",
-    //       "object",
-    //       "type"
-    //     ]
-    //   }
-    // ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "external",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ],
     "no-console": 1,
     "require-jsdoc": "off",
     "import/newline-after-import": ["error", { "count": 1 }],

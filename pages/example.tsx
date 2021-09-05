@@ -1,7 +1,7 @@
-import React from 'react';
-import type { FC } from 'react';
 import ExampleView from '@/views/ExampleView';
 import ExampleLayout from '@/layouts/ExampleLayout';
+import React from 'react';
+import type { FC } from 'react';
 
 interface ExampleProps {
   className?: string;

@@ -1,12 +1,12 @@
+import RouterLink from '@/components/RouterLink';
 import React from 'react';
-import type { FC } from 'react';
 import clsx from 'clsx';
 import { createStyles, makeStyles, Typography } from '@material-ui/core';
-import type { Theme } from 'src/theme';
 import Grid from '@material-ui/core/Grid';
-import RouterLink from '@/components/RouterLink';
 import Box from '@material-ui/core/Box';
 import ListRoundedIcon from '@material-ui/icons/ListRounded';
+import type { Theme } from 'src/theme';
+import type { FC } from 'react';
 
 interface NavContentProps {
   className?: string;

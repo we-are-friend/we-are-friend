@@ -1,6 +1,6 @@
-import React from 'react';
 import ExampleUnOrderList from '@/components/ExampleUnOrderList';
 import useTodos from '@/stores/useTodo';
+import React from 'react';
 
 const TodosList = () => {
   const todos = useTodos((state) => state.todos);

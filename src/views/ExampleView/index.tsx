@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
 import TodosList from './TodosList';
 import TodoForm from './TodoForm';
 import axios from '@/utils/axios';
+import React, { useEffect } from 'react';
 
 const getUserData = async () => {
   try {
