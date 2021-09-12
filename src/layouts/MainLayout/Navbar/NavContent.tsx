@@ -68,7 +68,6 @@ const NavContent: FC<NavContentProps> = ({ className }) => {
               Contact
             </Typography>
           </RouterLink>
-
           <ListRoundedIcon />
         </Box>
       </Grid>

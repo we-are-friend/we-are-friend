@@ -1,5 +1,4 @@
-import NavContent from './NavContent';
-import NavbarContainer from '@/layouts/MainLayout/NavbarContainer';
+import Navbar from './Navbar';
 import React, { ReactNode } from 'react';
 import clsx from 'clsx';
 import { createStyles, makeStyles } from '@material-ui/core';
@@ -21,9 +20,7 @@ const MainLayout: FC<MainLayoutProps> = ({ className, children }) => {
   const classes = useStyles();
   return (
     <div className={clsx(classes.root, className)}>
-      <NavbarContainer>
-        <NavContent />
-      </NavbarContainer>
+      <Navbar />
       <div>{children}</div>
     </div>
   );
