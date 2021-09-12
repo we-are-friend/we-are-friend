@@ -1,4 +1,5 @@
 import Navbar from './Navbar';
+import Footer from './Footer';
 import React, { ReactNode } from 'react';
 import clsx from 'clsx';
 import { createStyles, makeStyles } from '@material-ui/core';
@@ -21,7 +22,8 @@ const MainLayout: FC<MainLayoutProps> = ({ className, children }) => {
   return (
     <div className={clsx(classes.root, className)}>
       <Navbar />
-      <div>{children}</div>
+      {children}
+      <Footer />
     </div>
   );
 };
