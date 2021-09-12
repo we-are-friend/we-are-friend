@@ -7,6 +7,7 @@ import {
   Grid,
   Typography,
   makeStyles,
+  createStyles,
 } from '@material-ui/core';
 import type { FC } from 'react';
 import type { Theme } from 'src/theme';
@@ -15,48 +16,29 @@ interface HeroProps {
   className?: string;
 }
 
-const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    backgroundColor: theme.palette.background.dark,
-    paddingTop: 400,
-    paddingBottom: 200,
-    [theme.breakpoints.down('md')]: {
-      paddingTop: 120,
-      paddingBottom: 60,
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      backgroundColor: theme.palette.background.dark,
+      paddingTop: 200,
+      paddingBottom: 100,
+      borderBottomLeftRadius: theme.spacing(8),
+      borderBottomRightRadius: theme.spacing(8),
+      [theme.breakpoints.down('md')]: {
+        paddingTop: 180,
+        paddingBottom: 80,
+        borderBottomLeftRadius: theme.spacing(4),
+        borderBottomRightRadius: theme.spacing(4),
+      },
     },
-  },
-  technologyIcon: {
-    height: 40,
-    margin: theme.spacing(1),
-  },
-  image: {
-    perspectiveOrigin: 'left center',
-    transformStyle: 'preserve-3d',
-    perspective: 1500,
-    '& > img': {
-      maxWidth: '90%',
-      height: 'auto',
-      transform: 'rotateY(-35deg) rotateX(15deg)',
-      backfaceVisibility: 'hidden',
-      boxShadow: theme.shadows[16],
-    },
-  },
-  shape: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    '& > img': {
-      maxWidth: '90%',
-      height: 'auto',
-    },
-  },
-}));
+  }),
+);
 
-const Hero: FC<HeroProps> = ({ className, ...rest }) => {
+const Hero: FC<HeroProps> = ({ className }) => {
   const classes = useStyles();
 
   return (
-    <section className={clsx(classes.root, className)} {...rest}>
+    <section className={clsx(classes.root, className)}>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item md={6} xs={12}>

@@ -1,6 +1,5 @@
 const typography = {
   fontFamily: ['Bai Jamjuree', 'Roboto'].join(','),
-  fontSize: 14,
   h1: {
     fontFamily: 'Bai Jamjuree',
   },

@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
     toolbar: {
       backgroundColor: '#040710',
       boxShadow: theme.shadows[1],
-      margin: theme.spacing(3),
+      margin: theme.spacing(3, 0),
       borderRadius: theme.spacing(2),
     },
   }),
@@ -48,15 +48,15 @@ const NavbarContainer: FC<NavbarContainerProps> = ({ className, children }) => {
 
   return (
     <div className={clsx(classes.root, className)}>
-      <Container>
-        <HideOnScroll>
-          <AppBar className={classes.appbar}>
-            <animated.div style={styles}>
+      <HideOnScroll>
+        <AppBar className={classes.appbar}>
+          <animated.div style={styles}>
+            <Container>
               <Toolbar className={classes.toolbar}>{children}</Toolbar>
-            </animated.div>
-          </AppBar>
-        </HideOnScroll>
-      </Container>
+            </Container>
+          </animated.div>
+        </AppBar>
+      </HideOnScroll>
     </div>
   );
 };

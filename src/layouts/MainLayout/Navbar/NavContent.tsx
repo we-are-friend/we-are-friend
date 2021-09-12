@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme: Theme) =>
     startNav: {
       marginRight: theme.spacing(2),
     },
+    resumeIcon: {
+      fontFamily: 'Bai Jamjuree',
+      fontSize: 18,
+    },
   }),
 );
 
@@ -52,7 +56,7 @@ const NavContent: FC<NavContentProps> = ({ className }) => {
       <Grid item xs={2}>
         <Box display="flex" justifyContent="center">
           <RouterLink className={classes.textColor} to="/">
-            <Typography display="inline" variant="h4">
+            <Typography className={classes.resumeIcon} display="inline">
               RESUME
             </Typography>
           </RouterLink>
