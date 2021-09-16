@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       zIndex: -1,
       position: 'relative',
-      marginTop: -50,
+      marginTop: -80,
+      borderTopLeftRadius: theme.spacing(8),
       [theme.breakpoints.down('md')]: {
         paddingTop: 180,
         paddingBottom: 80,

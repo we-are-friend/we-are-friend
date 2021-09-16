@@ -19,15 +19,14 @@ interface HeroProps {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      position: 'relative',
       backgroundColor: theme.palette.background.dark,
       paddingTop: 200,
       paddingBottom: 100,
-      borderBottomLeftRadius: theme.spacing(8),
       borderBottomRightRadius: theme.spacing(8),
       [theme.breakpoints.down('md')]: {
         paddingTop: 180,
         paddingBottom: 80,
-        borderBottomLeftRadius: theme.spacing(4),
         borderBottomRightRadius: theme.spacing(4),
       },
     },

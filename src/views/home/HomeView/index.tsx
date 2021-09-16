@@ -1,4 +1,5 @@
 import Hero from './Hero';
+import ShowCase from './ShowCase';
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core';
 import type { FC } from 'react';
@@ -13,8 +14,9 @@ const HomeView: FC = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} title="Home">
+    <div className={classes.root}>
       <Hero />
+      <ShowCase />
     </div>
   );
 };
