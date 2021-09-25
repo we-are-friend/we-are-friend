@@ -27,8 +27,15 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     toolbar: {
-      backgroundColor: '#040710',
-      boxShadow: theme.shadows[1],
+      // backdropFilter: 'blur(20px)',
+      // backgroundColor: 'rgba(0,0,0,0.38)',
+
+      background: 'rgba(0,0,0,0.7)',
+      boxShadow: '20px 20px 40px -6px rgba(0,0,0,0.3)',
+      backdropFilter: 'blur(4.5px)',
+      // -webkit-backdrop-filter: 'blur(4.5px)',
+      WebkitBackdropFilter: 'blur(4.5px)',
+      // boxShadow: theme.shadows[1],
       margin: theme.spacing(3, 0),
       borderRadius: theme.spacing(2),
     },
@@ -48,15 +55,15 @@ const NavbarContainer: FC<NavbarContainerProps> = ({ className, children }) => {
 
   return (
     <div className={clsx(classes.root, className)}>
-      <HideOnScroll>
-        <AppBar className={classes.appbar}>
-          <animated.div style={styles}>
-            <Container>
+      <AppBar className={classes.appbar}>
+        <animated.div style={styles}>
+          <Container>
+            <HideOnScroll>
               <Toolbar className={classes.toolbar}>{children}</Toolbar>
-            </Container>
-          </animated.div>
-        </AppBar>
-      </HideOnScroll>
+            </HideOnScroll>
+          </Container>
+        </animated.div>
+      </AppBar>
     </div>
   );
 };

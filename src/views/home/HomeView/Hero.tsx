@@ -20,9 +20,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       position: 'relative',
+      zIndex: 2,
       backgroundColor: theme.palette.background.dark,
       paddingTop: 200,
-      paddingBottom: 100,
+      paddingBottom: 80,
       borderBottomRightRadius: theme.spacing(8),
       [theme.breakpoints.down('md')]: {
         paddingTop: 180,
@@ -48,17 +49,27 @@ const Hero: FC<HeroProps> = ({ className }) => {
               justifyContent="center"
             >
               <Typography color="secondary" variant="overline">
-                Introducing
+                we are friend
               </Typography>
-              <Typography color="textPrimary" variant="h2">
-                Welcome to resume
+              <Typography color="textPrimary" variant="h1">
+                THE RESUME
+                <Typography
+                  style={{
+                    fontWeight: 'bold',
+                    background: 'linear-gradient(to right, #007FFF, #0059B2)',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                  }}
+                  variant="h1"
+                >
+                  PLATFORM
+                </Typography>{' '}
+                TO GET NEW JOB
               </Typography>
               <Box mt={3}>
                 <Typography color="textSecondary" variant="body1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  deleniti aut dolores veritatis, sit quam architecto? Libero,
-                  accusamus quasi. Illo sit molestiae fuga autem at accusantium
-                  itaque natus minus sapiente?
+                  Create easy resume and guide you to
                 </Typography>
               </Box>
               <Box mt={3}>

@@ -1,9 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import { createStyles, makeStyles } from '@material-ui/core';
+import { createStyles, makeStyles, Paper } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import { animated, useSpring } from 'react-spring';
+import Typography from '@material-ui/core/Typography';
 import type { FC } from 'react';
 import type { Theme } from 'src/theme';
 
@@ -14,7 +15,7 @@ interface FooterProps {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      zIndex: -1,
+      zIndex: 1,
       position: 'relative',
       marginTop: -80,
       borderTopLeftRadius: theme.spacing(8),
@@ -65,11 +66,36 @@ const Footer: FC<FooterProps> = ({ className }) => {
   return (
     <animated.div className={clsx(classes.root, className)} style={styles}>
       <Container>
-        <Grid container>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={3}></Grid>
+        <Grid container style={{ paddingTop: 100 }}>
+          <Grid item xs={3}>
+            <Typography variant="h2">RESUME</Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography variant="body2">ourproduct</Typography>
+            <Typography variant="h6">We-are-resume</Typography>
+            <Typography variant="h6">We-are-blog</Typography>
+            <Typography variant="h6">RESUME</Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography variant="body2">ourproduct</Typography>
+            <Typography variant="h6">We-are-resume</Typography>
+            <Typography variant="h6">We-are-blog</Typography>
+            <Typography variant="h6">RESUME</Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Paper
+              style={{
+                height: 200,
+                background: 'rgba(255,255,255,0.8)',
+                boxShadow: '20px 20px 40px -6px rgba(255,255,255,0.3)',
+                backdropFilter: 'blur(4.5px)',
+                // -webkit-backdrop-filter: 'blur(4.5px)',
+                WebkitBackdropFilter: 'blur(4.5px)',
+              }}
+            >
+              ref our message
+            </Paper>
+          </Grid>
         </Grid>
       </Container>
     </animated.div>
